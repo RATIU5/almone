@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Almone\Log.h" />
     <ClInclude Include="src\Almone.h" />
     <ClInclude Include="src\Almone\Application.h" />
     <ClInclude Include="src\Almone\Core.h" />
     <ClInclude Include="src\Almone\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Almone\Log.cpp" />
     <ClCompile Include="src\Almone\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -70,6 +72,7 @@
       <PreprocessorDefinitions>ALM_PLATFORM_WINDOWS;ALM_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor\spdlog\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -85,6 +88,7 @@
       <PreprocessorDefinitions>ALM_PLATFORM_WINDOWS;ALM_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor\spdlog\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

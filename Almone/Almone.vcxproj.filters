@@ -27,9 +27,15 @@
     <ClInclude Include="src\Almone\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Almone\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Almone\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Almone\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
