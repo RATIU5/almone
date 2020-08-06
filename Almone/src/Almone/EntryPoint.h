@@ -9,6 +9,8 @@ int main(int argc, char** argv)
 {
 	Almone::Log::Init();
 
+	ALM_WARN("Initialized Log!");
+
 	auto app = Almone::CreateApplication();
 	app->Run();
 	delete app;

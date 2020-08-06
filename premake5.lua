@@ -1,4 +1,4 @@
-wokspace "Almone"
+workspace "Almone"
 	architecture "x64"
 
 	configurations
@@ -9,7 +9,7 @@ wokspace "Almone"
 	}
 
 
-outputdir = "%{cnf.buildcfg}-%{cnf.system}-%{cnf.architecture}"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "Almone"
 	location "Almone"
@@ -75,7 +75,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"Almone/vendor/spdlog/include",
 		"Almone/src"
 	}
 
