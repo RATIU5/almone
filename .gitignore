@@ -9,6 +9,5 @@ bin-int/
 *.user 
 *.filters
 
-
 # Do not ignore
 !vendor/bin/premake/
