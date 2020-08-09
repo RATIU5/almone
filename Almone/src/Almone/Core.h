@@ -9,4 +9,6 @@
 	#endif
 #else
 	#error Almone only supports Windows OS!
-#endif 
+#endif
+
+#define BIT(x) (1 << (x))
