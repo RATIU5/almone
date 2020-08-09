@@ -1,6 +1,6 @@
 # Directories
 .vs/
-bin/
+**/bin/
 bin-int/
 
 # Files
@@ -9,5 +9,6 @@ bin-int/
 *.user 
 *.filters
 
+
 # Do not ignore
-!vendor/bin/
+!vendor/bin/premake/
